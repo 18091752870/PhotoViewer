@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".RotateActivity">
+
+    <com.example.photoviewer.MyView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/imagexianshi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.example.photoviewer.MyView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:onClick="rotate"
+            android:text="顺时针旋转90°"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="保存"
+            android:onClick="rotateSave"/>
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="PhotoViewer"
+            android:textColor="@color/red"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="19dp"
+            android:text=
+                "\n   你可以在这里方便地管理你的图片。\n
+\n 主页--开始界面\n列表浏览界面--在这里浏览所有图片，点击单项查看大图；长按可以修改图片信息。点击“添加图片”，进入添加界面。\n
+ 大图浏览界面--浏览图片细节，可以删除不需要的图片。点击“编辑”进入编辑模式。\n
+ 编辑界面--可以旋转图片，还可以通过手指操作查看大图\n
+ 添加界面--在这里将本地图片加入PhotoViewer中。\n
+\n                     祝您使用愉快！" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="返回首页!"
+            android:onClick="returnHome"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
